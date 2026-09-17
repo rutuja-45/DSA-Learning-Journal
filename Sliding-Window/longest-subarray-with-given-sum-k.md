@@ -2,7 +2,7 @@
 
 ## 1. Core Pattern
 
-Sliding Window / Two Pointers
+Sliding Window 
 
 ## 2. Missing Trick
 
@@ -15,6 +15,6 @@ left++;
 
 ## 3. Flawed Approach
 
-My original approach was correct, but while shrinking the window, I only moved `left` without updating `sum`.
+while shrinking the window, I only moved `left` without updating `sum`.
 
 This caused the window sum to become incorrect.
