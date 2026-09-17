@@ -1,0 +1,23 @@
+# Maximum Subarray — Kadane's Algorithm
+
+## 1. Core Pattern
+
+Kadane's Algorithm
+
+## 2. Missing Trick
+
+If the current `sum` becomes negative, discard it by resetting `sum = 0`.
+
+A negative previous sum will only reduce the sum of any future subarray.
+
+```java
+if (sum < 0) {
+    sum = 0;
+}
+```
+
+## 3. Flawed Approach
+
+I was correctly calculating `sum` and comparing it with `maxSum`, but I didn't realize that carrying a **negative previous sum** into the next subarray is harmful.
+
+I was missing the idea of **starting fresh when the running sum becomes negative**.
